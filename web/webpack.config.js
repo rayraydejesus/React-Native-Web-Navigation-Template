@@ -70,7 +70,7 @@ const fileLoaderConfiguration = {
 
 module.exports = argv => {
   return {
-    entry: path.resolve(appDirectory, 'index'),
+    entry: path.resolve(appDirectory, 'src/index'),
     output: {
       clean: true,
       path: path.resolve(appDirectory, 'web/dist'),
