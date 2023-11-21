@@ -68,6 +68,13 @@ const fileLoaderConfiguration = {
   ],
 };
 
+// CONFIG: React Native Vector Icons web setup
+const iconLoaderConfiguration = {
+  test: /\.ttf$/,
+  loader: "file-loader", // Directly = file-loader; Default = url-loader;
+  include: path.resolve(__dirname, "node_modules/react-native-vector-icons"),
+}
+
 module.exports = argv => {
   return {
     entry: path.resolve(appDirectory, 'src/index'),
@@ -95,6 +102,7 @@ module.exports = argv => {
         babelLoaderConfiguration,
         imageLoaderConfiguration,
         fileLoaderConfiguration,
+        iconLoaderConfiguration,
       ],
     },
     plugins: [
