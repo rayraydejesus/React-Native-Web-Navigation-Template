@@ -7,5 +7,5 @@ module.exports = {
   templateDir: './template',
 
   // Path to script, which will be executed after init
-  postInitScript: './scripts/post-init.script.js',
+  postInitScript: './scripts/post-init.script.sh',
 };
