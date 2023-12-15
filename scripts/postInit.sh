@@ -19,7 +19,7 @@ echo "// CONFIG: React Native Vector Icons iOS\nmodule.exports = {\n\tdependenci
 
 echo "\nReplacing NPM with Yarn...\n"
 #rm package.lock.json
-#yarn install
+yarn install
 
 echo "\nInstalling Pods...\n"
 #cd ios
