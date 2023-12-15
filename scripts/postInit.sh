@@ -22,5 +22,5 @@ echo "\nReplacing NPM with Yarn...\n"
 yarn install
 
 echo "\nInstalling Pods...\n"
-#cd ios
-#pod install
+cd ios
+pod install
